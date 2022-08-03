@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>QUAZEEM WEATHER APP</title>
+
+</head>
+<body>
+    <!-- i created a div class of container to cover all the element of the upper-colum, 
+        this a two colum weather app that covers weather items and current date and time-->
+    <div class="container">
+
+       <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12.30<span id="am-pm"></span>
+                </div>
+            
+                <div class="date" id="date">
+                    monday, 26 may
+                </div>
+
+                
+                <div id="weatherContainer">
+                    <div id="weatherDescription">
+                        <h1 id="cityHeader"></h1>
+                        <div id="weatherMain">
+                             <div id="temperature"></div>
+                            <div id="temperature"></div>
+                            <div id="weatherDescriptionHeader"></div>
+                            <div><img src="" alt="" srcset="" id="weather-icon"></div>
+                        </div>
+                        <hr>
+                        <div id="windSpeed" class="bottomDetail"></div>
+                        <div id="humidity" class="bottomDetail"></div>
+            
+            
+                    </div>
+            
+            
+            
+                </div>
+    
+
+                
+        </div>
+
+            <div id="search-Container">
+                <input class="searchcontrol" type="text" placeholder="City Name or Zipcode" id="searchInput">
+                <button class="searchControl" id="searchBtn">Search</button>
+            </div>
+        
+            
+
+        </div>
+
+        
+
+    </div>
+
+<!-- this is the second and the lower colum that covers the projection of future weather data-->
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+            <div class="other">
+                <div class="day">monday</div>
+            <div class="temp">night - 25.6&#176; c</div>
+            <div class="temp">day - 45.6&#176; c</div>
+
+            </div>
+            
+            
+        </div>
+<!-- because i cannot build custom images, i used icons from openweather app for my images-->
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">tuesday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                <div class="temp">night - 25.6&#176; c</div>
+                <div class="temp">day - 45.6&#176; c</div>
+
+            </div>
+
+            <div class="weather-forecast-item">
+                <div class="day">wednesday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                <div class="temp">night - 25.6&#176; c</div>
+                <div class="temp">day - 45.6&#176; c</div>
+
+            </div>
+
+            <div class="weather-forecast-item">
+                <div class="day">thursday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                <div class="temp">night - 25.6&#176; c</div>
+                <div class="temp">day - 45.6&#176; c</div>
+
+            </div>
+
+            <div class="weather-forecast-item">
+                <div class="day">friday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                <div class="temp">night - 25.6&#176; c</div>
+                <div class="temp">day - 45.6&#176; c</div>
+
+            </div>
+
+            <div class="weather-forecast-item">
+                <div class="day">saturday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                <div class="temp">night - 25.6&#176; c</div>
+                <div class="temp">day - 45.6&#176; c</div>
+
+            </div>
+
+    
+
+        </div>
+    </div>
+
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
